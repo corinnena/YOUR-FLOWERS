@@ -1,0 +1,693 @@
+    @import url('https://fonts.googleapis.com/css2?family=Allura&family=Noto+Sans+JP:wght@100&family=Open+Sans&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Dancing+Script:wght@600&family=Noto+Sans+JP:wght@100&family=Playfair+Display:ital@1&family=Smooch&display=swap');
+    * {
+        color: navy;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        font-family: calibri;
+    }
+    
+    img {
+        display: block;
+        border-radius: 10px;
+    }
+    
+    header {
+        background: linear-gradient(to right, blueviolet 0%, rgb(248, 228, 231) 100%);
+        box-shadow: inset 5px 10px 18px rgb(231, 182, 238);
+        border-radius: 10px;
+        border: 1px solid blueviolet;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    #logoHydrangea {
+        width: 10%;
+        height: 10%;
+    }
+    
+    .btnConnect {
+        background-color: transparent;
+        font-size: 20px;
+        border: none;
+        position: relative;
+        right: 0;
+        margin-right: 10px;
+        border-radius: 5px;
+    }
+    
+    .btnConnect a {
+        color: navy;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    .btnConnect:hover {
+        background-color: #555;
+    }
+    
+    header h1 {
+        font-size: small;
+    }
+    
+    nav {
+        width: 50%;
+        height: 100px;
+        z-index: 1;
+    }
+    
+    nav .main_pages {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    nav .main_pages a {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+        text-decoration: none;
+        font-family: Calibri;
+        color: white;
+        z-index: 1;
+    }
+    
+    nav a:hover {
+        background: rgba(255, 192, 203, 0.363);
+    }
+    
+    #label1 {
+        display: none;
+    }
+    
+    @media all and (max-width: 991px) {
+        nav {
+            height: 60px;
+        }
+        nav .main_pages {
+            display: none;
+        }
+        #label1 {
+            width: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            font-size: 40px;
+            color: white;
+            cursor: pointer;
+        }
+    }
+    
+    #label1,
+    #toggle {
+        display: none;
+    }
+    
+    @media all and (max-width: 991px) {
+        nav {
+            height: 60px;
+        }
+        nav .main_pages {
+            display: none;
+            flex-direction: column;
+            background: #48435ccf;
+            height: 220px;
+        }
+        nav .main_pages a {
+            width: 50%;
+        }
+        #label1 {
+            width: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            font-size: 40px;
+            color: white;
+            cursor: pointer;
+        }
+        #toggle:checked+.main_pages {
+            display: flex;
+        }
+    }
+    /*------------------------------------------------------------------------------------------------------------------------------------*/
+    
+    h1 {
+        padding-top: 0px;
+        font-family: 'Open Sans', sans-serif;
+        text-align: center;
+        font-style: italic;
+    }
+    
+    .title {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    h3 {
+        font-family: 'Open Sans', sans-serif;
+        text-align: right;
+        font-style: italic;
+        padding-right: 10px;
+    }
+    
+    article[class="unicorn"] {
+        padding-top: 0;
+        background: linear-gradient(to bottom, white 0%, rgb(198, 239, 250) 40%, rgb(141, 141, 216) 60%, blue 100%);
+        border-radius: 10px;
+    }
+    
+    #photoAccueil1 {
+        margin-top: 100px;
+        margin-left: 15px;
+        width: 90%;
+        z-index: auto;
+        border-radius: 10px;
+    }
+    
+    #bloc-Accueil {
+        width: 80%;
+        margin-top: 20px;
+        margin-left: 35px;
+    }
+    
+    #bloc1 {
+        margin-top: 10px;
+        margin-left: 10px;
+        font-size: 1em;
+    }
+    
+    #bloc1 p {
+        text-indent: 15%;
+        text-align: justify;
+    }
+    
+    #bloc1 h5 {
+        text-indent: 15%;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    #logoHydrangea2 {
+        width: 10%;
+        height: 10%;
+        display: block;
+        margin-left: 50%;
+    }
+    
+    footer {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+    }
+    
+    #footer3,
+    #footer1,
+    #footer2 {
+        color: white;
+        border: 1px solid black;
+        text-align: center;
+        font-weight: bold;
+        border-radius: 10px;
+        background-color: blueviolet;
+    }
+    
+    #footer3 img {
+        width: 40%;
+        margin: auto;
+    }
+    
+    @media only screen and (min-width: 768px) {
+        header h1,
+        h1 {
+            font-size: 50px;
+        }
+        nav .main_pages a {
+            font-size: 15px;
+        }
+        .btnConnect {
+            position: relative;
+            left: 0;
+        }
+        footer {
+            display: flex;
+            flex-direction: row;
+            background-color: blueviolet;
+        }
+        #footer3,
+        #footer1,
+        #footer2 {
+            width: 33.3333%;
+            border: none;
+            background-color: transparent;
+        }
+        .blocPresse {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        img {
+            margin: auto;
+        }
+    }
+    
+    #myBtntop {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        border: none;
+        outline: none;
+        background-color: purple;
+        color: white;
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 15px;
+    }
+    
+    #myBtntop:hover {
+        background-color: #555;
+    }
+    /*-------------------------------------------------------------------MEDIA QUERIES----------------------------------------------------*/
+    
+    @media screen and (max-width: 400px) {
+        #menuHaut ul,
+        #btnMenu {
+            display: none;
+        }
+    }
+    /*--------------------------------------------Carroussel page1--------------------------------------*/
+    
+    .mySlides {
+        display: none
+    }
+    
+    img {
+        vertical-align: middle;
+    }
+    
+    .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+        margin-top: 80px;
+    }
+    
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+    
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+    
+    .prev:hover,
+    .next:hover {
+        background-color: deeppink;
+    }
+    
+    .text {
+        color: black;
+        font-size: 30px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+        font-style: oblique;
+    }
+    
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: rgb(204, 203, 203);
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+    
+    .active,
+    .dot:hover {
+        background-color: deeppink;
+    }
+    
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+    
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+        to {
+            opacity: 1
+        }
+    }
+    
+    @media only screen and (max-width: 300px) {
+        .prev,
+        .next,
+        .text {
+            font-size: 11px
+        }
+    }
+    /*-------------------------------------------------Page2----------------------------------------------------------*/
+    
+    form {
+        padding-top: 90px;
+    }
+    
+    fieldset {
+        border-radius: 10px;
+        box-shadow: 2px 5px rgb(194, 193, 193);
+    }
+    
+    legend,
+    input,
+    label {
+        margin-top: 10px;
+    }
+    
+    .pays {
+        margin-top: 10px;
+    }
+    
+    .buttonPage2 {
+        background-color: purple;
+        color: white;
+        font-size: 15px;
+        width: 20%;
+        height: 40%;
+        padding: 10px;
+        border-radius: 10px;
+        border: none;
+        box-shadow: 2px 5px rgb(194, 193, 193);
+    }
+    
+    .buttonPage2:hover {
+        background-color: #555;
+    }
+    /*------------------------------------------------PAGE 3--------------------------------------------*/
+    
+    main[class="main3"] {
+        background: linear-gradient(to bottom, white 0%, rgb(155, 193, 243)20%, rgb(101, 101, 190) 50%, blue 70%, rgb(40, 40, 121)90%, navy 100%);
+        border-radius: 15px;
+    }
+    
+    article[class=page3] {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 500px;
+    }
+    
+    article:nth-child(1) {
+        padding-top: 250px;
+    }
+    
+    .container {
+        position: relative;
+        width: 1100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    
+    .container .card {
+        position: relative;
+        max-width: 300px;
+        height: 215px;
+        background-color: blueviolet;
+        margin: 30px 10px;
+        padding: 20px 15px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+        transition: 0.3s ease-in-out;
+        border-radius: 15px;
+    }
+    
+    .container .card:hover {
+        height: 320px;
+    }
+    
+    .container .card .image {
+        position: relative;
+        width: 260px;
+        height: 260px;
+        top: -40%;
+        left: 8px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+    
+    .container .card .image img {
+        max-width: 100%;
+        border-radius: 15px;
+    }
+    
+    .container .card .content {
+        position: relative;
+        top: -140px;
+        padding: 10px 15px;
+        color: #111;
+        text-align: center;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.3s ease-in-out;
+    }
+    
+    .container .card:hover .content {
+        margin-top: 30px;
+        visibility: visible;
+        opacity: 1;
+        transition-delay: 0.2s;
+    }
+    /*----------------------------------------------PAGE 4----------------------------------*/
+    
+    .class1 {
+        width: 50%;
+    }
+    
+    .main4 p {
+        text-indent: 15%;
+    }
+    
+    .main4 img {
+        margin: auto;
+    }
+    
+    .main4 img:nth-child(1) {
+        padding-top: 50px;
+    }
+    
+    .main4 img:nth-child(2) {
+        padding-top: 60px;
+    }
+    /*------------------------------------------------PAGE 5------------------------------------------*/
+    
+    .page5 p {
+        text-indent: 20%;
+    }
+    /*----------------------Menu métiers------------------------------------------------*/
+    
+    #menuMetiers {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-align: center;
+        width: 180px;
+    }
+    
+    #menuMetiers ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-align: center;
+    }
+    
+    #menuMetiers li {
+        background-color: #f9f5fa;
+        border-radius: 6px;
+        margin-bottom: 2px;
+        box-shadow: 3px 3px 3px #999;
+        border: solid 1px #333A40
+    }
+    
+    #menuMetiers li li {
+        max-height: 0;
+        overflow: hidden;
+        transition: all .5s;
+        border-radius: 0;
+        background-color: white;
+        box-shadow: none;
+        border: none;
+        margin: 0
+    }
+    
+    #menuMetiers a {
+        display: block;
+        text-decoration: none;
+        color: rgb(177, 80, 80);
+        padding: 8px 0;
+        font-family: verdana;
+        font-size: 1.2em
+    }
+    
+    #menuMetiers ul li a,
+    #m#menuMetiers li:hover li a {
+        font-size: 1em
+    }
+    
+    #menuMetiers li:hover {
+        background: #bf72ae
+    }
+    
+    #menuMetiers li li:hover {
+        background: #d3C3B0;
+    }
+    
+    #m#menuMetiers ul li:last-child {
+        border-radius: 0 0 6px 6px;
+        border: none;
+    }
+    
+    #menuMetiers li:hover li {
+        max-height: 15em;
+    }
+    /*------------------------------------------------------PAGE 6----------------------------------------*/
+    
+    .hydrangeaRose {
+        padding-top: 50px;
+        padding-left: 10px;
+    }
+    
+    .hydrangeaRose p {
+        text-indent: 15%;
+    }
+    /*------------------------------------------------------accordéonpage6---------------------
+    -----------------------*/
+    
+    .accordion {
+        margin-top: 80px;
+        padding: 0;
+        list-style: none;
+        width: 95%;
+        padding-left: 40px;
+        border-radius: 5px;
+    }
+    
+    .accordion-title {
+        display: block;
+        margin: 0;
+        padding: 0 7px;
+        line-height: 34px;
+        text-decoration: none;
+        cursor: pointer;
+        background-color: #d0b0d3;
+        transition: all 0.5s;
+        border-radius: 5px;
+    }
+    
+    .accordion-title:hover {
+        background: rgb(133, 12, 76);
+        color: #ffe843;
+        border-color: #ffe843;
+    }
+    
+    .accordion-content {
+        padding: 7px;
+        border-radius: 5px;
+    }
+    
+    #btnTop {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 15px;
+        font-weight: bolder;
+        border: 2px solid #371F54;
+        outline: none;
+        background-color: white;
+        color: rgb(226, 2, 170);
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 4px;
+    }
+    
+    #btnTop:hover {
+        background-color: rgb(226, 183, 183);
+    }
+    
+    #space {
+        width: 100%;
+        height: 300px;
+        background-image: url('images/orchidRouge2.jpg');
+        background-repeat: no-repeat;
+        background-size: 40%;
+        margin-left: 400px;
+        margin-top: 40px;
+    }
+    
+    @media only screen and (max-width: 600px) {
+        #space {
+            margin-left: 60px;
+            background-size: 70%;
+            margin-top: 100px;
+        }
+    }
+    
+    #bande {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 60px;
+        background-color: #371F54;
+    }
+    
+    #part1,
+    #part2,
+    #part3 {
+        width: 33.333%;
+        height: 60px;
+    }
+    
+    #part1 {
+        font-size: 15px;
+        color: white;
+        text-align: center;
+    }
+    
+    #part3 {
+        background-image: url('images/medias.webp');
+        background-repeat: no-repeat;
+        background-size: 35%;
+        margin-left: 180px;
+    }
